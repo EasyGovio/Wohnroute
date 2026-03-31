@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>WohnRoute | Ihr Zuhause. Ihr Weg.</title>
+    <meta name="description" content="Almanya'da konut ve yerleşim rehberi. Kiralık daire arama, sözleşme, depozito hakları ve göçmenler için özel ipuçları.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #04162E;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #ffffff;
+            line-height: 1.5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background-color: #04162E;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 24px 24px 12px 24px;
+            border-bottom: 1px solid rgba(230,126,34,0.2);
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            color: #E67E22;
+        }
+        .badge {
+            font-size: 0.75rem;
+            background: rgba(230,126,34,0.15);
+            padding: 6px 12px;
+            border-radius: 60px;
+            color: #E67E22;
+            font-weight: 500;
+        }
+        /* Hero */
+        .hero {
+            padding: 32px 24px 24px 24px;
+            text-align: left;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.3px;
+            color: #ffffff;
+        }
+        .feature-list {
+            list-style: none;
+            margin: 24px 0 0 0;
+        }
+        .feature-list li {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: #E67E22;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: inline-block;
+            width: 24px;
+        }
+        /* Form */
+        .beta-section {
+            background: rgba(230,126,34,0.08);
+            margin: 20px 24px 32px 24px;
+            padding: 28px 24px;
+            border-radius: 32px;
+            text-align: center;
+        }
+        .beta-section h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .beta-section p {
+            font-size: 0.9rem;
+            color: #cfdfe9;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .form-group input {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(230,126,34,0.5);
+            border-radius: 60px;
+            padding: 14px 20px;
+            font-size: 1rem;
+            color: #ffffff;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        .form-group input:focus {
+            border-color: #E67E22;
+            background: rgba(255,255,255,0.15);
+        }
+        .form-group input::placeholder {
+            color: #8ba0b0;
+        }
+        .btn-primary {
+            background: #E67E22;
+            border: none;
+            border-radius: 60px;
+            padding: 14px 20px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #04162E;
+            cursor: pointer;
+            transition: 0.2s;
+            width: 100%;
+            text-align: center;
+        }
+        .btn-primary:hover {
+            background: #d35400;
+            transform: scale(0.98);
+        }
+        /* Footer */
+        .footer {
+            padding: 24px 24px 32px 24px;
+            text-align: center;
+            border-top: 1px solid rgba(230,126,34,0.15);
+            font-size: 0.7rem;
+            color: #8ba0b0;
+        }
+        .footer p {
+            margin-bottom: 6px;
+        }
+        .footer-note {
+            font-size: 0.7rem;
+            color: #5c7c8c;
+        }
+        @media (min-width: 560px) {
+            .hero h1 {
+                font-size: 2.6rem;
+            }
+            .form-group {
+                flex-direction: row;
+                gap: 12px;
+                max-width: 480px;
+            }
+            .form-group input {
+                flex: 1;
+            }
+            .btn-primary {
+                width: auto;
+                padding: 14px 32px;
+            }
+            .beta-section {
+                margin: 32px 32px 40px 32px;
+            }
+        }
+        @media (max-width: 400px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .logo {
+                font-size: 1.6rem;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">Wohn<span>Route</span></div>
+        <div class="badge">PACDI | Konut Rehberi</div>
+    </div>
+    <div class="hero">
+        <h1>Ihr Zuhause. Ihr Weg.</h1>
+        <ul class="feature-list">
+            <li>Kiralık daire arama rehberliği</li>
+            <li>Mietvertrag (kira sözleşmesi) rehberi</li>
+            <li>Kapora ve depozito hakları</li>
+            <li>Göçmenler için özel ipuçları</li>
+        </ul>
+    </div>
+    <div class="beta-section">
+        <h3>Beta listesine katılın</h3>
+        <p>WohnRoute'u ilk deneyenlerden olun. Konut arayışınızda yanınızdayız.</p>
+        <form id="betaForm" onsubmit="return submitBeta(event)">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Adınız" required>
+                <input type="email" id="email" name="email" placeholder="E-posta adresiniz" required>
+                <button type="submit" class="btn-primary">Beta Listesine Katıl</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>© 2026 PACDI — wohnroute.de</p>
+        <p class="footer-note">Datenschutzfreundlich · Keine Speicherung</p>
+    </div>
+</div>
+
+<script>
+    function submitBeta(event) {
+        event.preventDefault();
+        var nameInput = document.getElementById('name');
+        var emailInput = document.getElementById('email');
+        if (nameInput && emailInput && nameInput.value.trim() !== '' && emailInput.value.trim() !== '') {
+            alert('Teşekkürler! Size ulaşacağız.');
+            nameInput.value = '';
+            emailInput.value = '';
+        } else {
+            alert('Lütfen adınızı ve e-posta adresinizi giriniz.');
+        }
+        return false;
+    }
+</script>
+</body>
+</html>
