@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wahlkreis & Nachbarschaft finden — Wichtig beim Umzug nach Berlin | WohnRoute</title>
+<meta name="description" content="Sie ziehen um oder suchen eine Wohnung in Berlin? Finden Sie Ihren künftigen Wahlkreis für die Wahl 2026 und entdecken Sie Schulen und Infos zu Ihrer neuen Nachbarschaft — alle 78 Wahlkreise in 12 Bezirken.">
+<link rel="canonical" href="https://wohnroute.de/wahlkreise/">
+<style>
+* { box-sizing: border-box; }
+body { background:#04162E; color:#eaf2fb; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; margin:0; padding:0; line-height:1.6; }
+header { background:#0a1f3a; padding:14px 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(230,126,34,0.15); }
+header .logo { color:#E67E22; font-weight:800; font-size:1.05rem; }
+.menu-btn { background:none; border:1px solid rgba(230,126,34,0.3); color:#E67E22; border-radius:8px; padding:8px 12px; cursor:pointer; font-size:0.9rem; }
+nav#sideMenu { display:none; background:#0a1f3a; border-bottom:1px solid rgba(230,126,34,0.15); padding:14px 16px; }
+nav#sideMenu.open { display:block; }
+nav#sideMenu ul { list-style:none; margin:0; padding:0; columns:2; }
+nav#sideMenu li { margin-bottom:8px; }
+nav#sideMenu a { color:#b9c9dd; text-decoration:none; font-size:0.88rem; }
+.container { max-width:820px; margin:0 auto; padding:24px 16px 60px; }
+h1 { color:#E67E22; font-size:1.6rem; margin-bottom:6px; text-align:center; }
+.sub { color:#7a9ab8; font-size:0.88rem; margin-bottom:22px; text-align:center; }
+#searchBox { width:100%; padding:14px 16px; border-radius:12px; border:1px solid rgba(230,126,34,0.3); background:#0a1f3a; color:#eaf2fb; font-size:1rem; margin-bottom:8px; }
+#searchResults { margin-bottom:24px; }
+.result-item { background:#0a1f3a; border:1px solid rgba(230,126,34,0.15); border-radius:10px; padding:10px 14px; margin-bottom:8px; display:block; text-decoration:none; color:#eaf2fb; }
+.result-item strong { color:#E67E22; }
+.result-item span { display:block; color:#8aa0bc; font-size:0.82rem; }
+h2.section-title { color:#E67E22; font-size:1.1rem; margin:26px 0 12px; text-align:center; }
+.bezirk-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.bezirk-card { background:#0a1f3a; border:1px solid rgba(230,126,34,0.15); border-radius:12px; padding:14px; text-decoration:none; display:flex; flex-direction:column; gap:4px; }
+.bezirk-card strong { color:#E67E22; font-size:0.95rem; }
+.bezirk-card span { color:#7a9ab8; font-size:0.78rem; }
+.footer-note { text-align:center; color:#6a80a0; font-size:0.75rem; margin-top:30px; }
+@media (max-width:480px) { .bezirk-grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🏠 WohnRoute</div>
+  <button class="menu-btn" onclick="document.getElementById('sideMenu').classList.toggle('open')">☰ Bezirke</button>
+</header>
+<nav id="sideMenu">
+  <ul>
+        <li><a href="/wahlkreise/charlottenburg-wilmersdorf.html">Charlottenburg-Wilmersdorf <span class="wk-count">(7)</span></a></li>
+        <li><a href="/wahlkreise/friedrichshain-kreuzberg.html">Friedrichshain-Kreuzberg <span class="wk-count">(5)</span></a></li>
+        <li><a href="/wahlkreise/lichtenberg.html">Lichtenberg <span class="wk-count">(6)</span></a></li>
+        <li><a href="/wahlkreise/marzahn-hellersdorf.html">Marzahn-Hellersdorf <span class="wk-count">(6)</span></a></li>
+        <li><a href="/wahlkreise/mitte.html">Mitte <span class="wk-count">(7)</span></a></li>
+        <li><a href="/wahlkreise/neukoelln.html">Neukölln <span class="wk-count">(6)</span></a></li>
+        <li><a href="/wahlkreise/pankow.html">Pankow <span class="wk-count">(9)</span></a></li>
+        <li><a href="/wahlkreise/reinickendorf.html">Reinickendorf <span class="wk-count">(6)</span></a></li>
+        <li><a href="/wahlkreise/spandau.html">Spandau <span class="wk-count">(5)</span></a></li>
+        <li><a href="/wahlkreise/steglitz-zehlendorf.html">Steglitz-Zehlendorf <span class="wk-count">(7)</span></a></li>
+        <li><a href="/wahlkreise/tempelhof-schoeneberg.html">Tempelhof-Schöneberg <span class="wk-count">(7)</span></a></li>
+        <li><a href="/wahlkreise/treptow-koepenick.html">Treptow-Köpenick <span class="wk-count">(7)</span></a></li>
+  </ul>
+</nav>
+<div class="container">
+  <h1>In welchem Wahlkreis liegt Ihre neue Adresse?</h1>
+  <div class="sub">Praktisch beim Umzug: Berliner Wahl zum 20. Abgeordnetenhaus — 20. September 2026 · 78 Wahlkreise in 12 Bezirken, inkl. Schulen in der Nachbarschaft</div>
+  <input type="text" id="searchBox" placeholder="Adresse, Stichwort oder Platz suchen (z. B. Alexanderplatz, Charité, Frohnau)...">
+  <div style="text-align:center;margin:6px 0 16px;">
+    <a href="/wahlkreise/finder.html" style="color:#E67E22;font-size:0.85rem;text-decoration:underline;">📍 Genaue Adresse eingeben — automatische Wahlkreis-Findung</a>
+  </div>
+  <div id="searchResults"></div>
+
+  <h2 class="section-title">Alle Bezirke</h2>
+  <div class="bezirk-grid">
+      <a class="bezirk-card" href="/wahlkreise/charlottenburg-wilmersdorf.html"><strong>Charlottenburg-Wilmersdorf</strong><span>7 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/friedrichshain-kreuzberg.html"><strong>Friedrichshain-Kreuzberg</strong><span>5 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/lichtenberg.html"><strong>Lichtenberg</strong><span>6 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/marzahn-hellersdorf.html"><strong>Marzahn-Hellersdorf</strong><span>6 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/mitte.html"><strong>Mitte</strong><span>7 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/neukoelln.html"><strong>Neukölln</strong><span>6 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/pankow.html"><strong>Pankow</strong><span>9 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/reinickendorf.html"><strong>Reinickendorf</strong><span>6 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/spandau.html"><strong>Spandau</strong><span>5 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/steglitz-zehlendorf.html"><strong>Steglitz-Zehlendorf</strong><span>7 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/tempelhof-schoeneberg.html"><strong>Tempelhof-Schöneberg</strong><span>7 Wahlkreise</span></a>
+      <a class="bezirk-card" href="/wahlkreise/treptow-koepenick.html"><strong>Treptow-Köpenick</strong><span>7 Wahlkreise</span></a>
+  </div>
+  <div class="footer-note">Quelle: Amtsblatt für Berlin Nr. 41 / 2. Oktober 2025.</div>
+</div>
+<script>
+var WK_SEARCH_DATA = [{"bezirk":"Mitte","slug":"mitte","nr":1,"kurz":"Charité, Oranienburger Tor, Zionskirchplatz"},{"bezirk":"Mitte","slug":"mitte","nr":2,"kurz":"Alexanderplatz, Engelbecken, Leipziger Platz"},{"bezirk":"Mitte","slug":"mitte","nr":3,"kurz":"Südliches Moabit, Hansaviertel, Großer Tiergarten"},{"bezirk":"Mitte","slug":"mitte","nr":4,"kurz":"Nördliches Moabit, Westhafen"},{"bezirk":"Mitte","slug":"mitte","nr":5,"kurz":"Schillerpark, Rehberge"},{"bezirk":"Mitte","slug":"mitte","nr":6,"kurz":"Soldiner Straße, an der Panke entlang"},{"bezirk":"Mitte","slug":"mitte","nr":7,"kurz":"Humboldthain, Nettelbeckplatz"},{"bezirk":"Friedrichshain-Kreuzberg","slug":"friedrichshain-kreuzberg","nr":1,"kurz":"Nördlich Yorckstraße, nördlich Hallesches Ufer/Gitschiner/Skalitzer Straße"},{"bezirk":"Friedrichshain-Kreuzberg","slug":"friedrichshain-kreuzberg","nr":2,"kurz":"Südlich Yorckstraße, östlich Grimmstraße, südlich Dieffenbachstraße"},{"bezirk":"Friedrichshain-Kreuzberg","slug":"friedrichshain-kreuzberg","nr":3,"kurz":"Südlich Skalitzer Straße, Oberbaumbrücke, Stralauer Halbinsel"},{"bezirk":"Friedrichshain-Kreuzberg","slug":"friedrichshain-kreuzberg","nr":4,"kurz":"Westlich Warschauer Straße, nördlich der Spree bis Grenze Mitte"},{"bezirk":"Friedrichshain-Kreuzberg","slug":"friedrichshain-kreuzberg","nr":5,"kurz":"Zwischen Warschauer Straße und Grenze Lichtenberg"},{"bezirk":"Pankow","slug":"pankow","nr":1,"kurz":"Buch, Karow, Französisch Buchholz"},{"bezirk":"Pankow","slug":"pankow","nr":2,"kurz":"Blankenfelde, Rosenthal, Wilhelmsruh, Niederschönhausen-Nord"},{"bezirk":"Pankow","slug":"pankow","nr":3,"kurz":"Pankow-Nord, Niederschönhausen-Süd, Französisch Buchholz-West"},{"bezirk":"Pankow","slug":"pankow","nr":4,"kurz":"Weißensee-Nord, Stadtrandsiedlung Malchow, Blankenburg"},{"bezirk":"Pankow","slug":"pankow","nr":5,"kurz":"Pankow-Süd, Heinersdorf"},{"bezirk":"Pankow","slug":"pankow","nr":6,"kurz":"Esplanade, Schönhauser Allee, Prenzlauer Allee"},{"bezirk":"Pankow","slug":"pankow","nr":7,"kurz":"Prenzlauer Berg-West (Wisbyer bis Greifswalder Straße)"},{"bezirk":"Pankow","slug":"pankow","nr":8,"kurz":"Prenzlauer Berg-Südost (bis Grenze Friedrichshain-Kreuzberg)"},{"bezirk":"Pankow","slug":"pankow","nr":9,"kurz":"Weißensee-Südost"},{"bezirk":"Charlottenburg-Wilmersdorf","slug":"charlottenburg-wilmersdorf","nr":1,"kurz":"Charlottenburg-Nord, Mierendorffplatz, Rathaus"},{"bezirk":"Charlottenburg-Wilmersdorf","slug":"charlottenburg-wilmersdorf","nr":2,"kurz":"Olympiastadion, Westend, Schloss Charlottenburg, Eichkamp"},{"bezirk":"Charlottenburg-Wilmersdorf","slug":"charlottenburg-wilmersdorf","nr":3,"kurz":"Schloßstraße, Lietzensee, Adenauerplatz"},{"bezirk":"Charlottenburg-Wilmersdorf","slug":"charlottenburg-wilmersdorf","nr":4,"kurz":"Deutsche Oper, Ernst-Reuter-Platz, Kurfürstendamm"},{"bezirk":"Charlottenburg-Wilmersdorf","slug":"charlottenburg-wilmersdorf","nr":5,"kurz":"Grunewaldsee, Halensee, Preußenpark, Hohenzollerndamm"},{"bezirk":"Charlottenburg-Wilmersdorf","slug":"charlottenburg-wilmersdorf","nr":6,"kurz":"Ludwigkirchplatz, Prager Platz, Bundesplatz, Volkspark"},{"bezirk":"Charlottenburg-Wilmersdorf","slug":"charlottenburg-wilmersdorf","nr":7,"kurz":"Krematorium Wilmersdorf, Rüdesheimerplatz, Eisstadion Wilmersdorf"},{"bezirk":"Spandau","slug":"spandau","nr":1,"kurz":"Hakenfelde, nördliches Falkenhagener Feld, Wasserstadt, nördliche Neustadt"},{"bezirk":"Spandau","slug":"spandau","nr":2,"kurz":"Südliche Neustadt, südöstliches Falkenhagener Feld, Altstadt Spandau, Klosterfelde"},{"bezirk":"Spandau","slug":"spandau","nr":3,"kurz":"Haselhorst, Siemensstadt, Stresow, nordöstliche Wilhelmstadt, Tiefwerder"},{"bezirk":"Spandau","slug":"spandau","nr":4,"kurz":"Südwestliches Falkenhagener Feld, Staaken"},{"bezirk":"Spandau","slug":"spandau","nr":5,"kurz":"Südliche Wilhelmstadt, Pichelsdorf, Gatow, Kladow"},{"bezirk":"Steglitz-Zehlendorf","slug":"steglitz-zehlendorf","nr":1,"kurz":"Breitenbachplatz, Schloßstraße, Lauenburger Platz, Grunewaldstraße, Asternplatz"},{"bezirk":"Steglitz-Zehlendorf","slug":"steglitz-zehlendorf","nr":2,"kurz":"Albrechtstraße, Steglitzer Damm, Klingsorstraße, Munsterdamm, Halskestraße"},{"bezirk":"Steglitz-Zehlendorf","slug":"steglitz-zehlendorf","nr":3,"kurz":"Augustaplatz, Finkensteinallee, Goerzallee, Dahlemer Weg, Teltower Damm, Sachtlebenstraße"},{"bezirk":"Steglitz-Zehlendorf","slug":"steglitz-zehlendorf","nr":4,"kurz":"Hildburghauser Straße, Oberhofer Platz, Thermometersiedlung, Lippstädter Straße"},{"bezirk":"Steglitz-Zehlendorf","slug":"steglitz-zehlendorf","nr":5,"kurz":"Leonorenstraße, Paul-Schneider-Straße, Kamenzer Damm, Gallwitzallee, Siemensstraße, Marienplatz"},{"bezirk":"Steglitz-Zehlendorf","slug":"steglitz-zehlendorf","nr":6,"kurz":"Clayallee, Thielallee, Pacelliallee, Königin-Luise-Straße, Schützallee, Onkel-Tom-Straße"},{"bezirk":"Steglitz-Zehlendorf","slug":"steglitz-zehlendorf","nr":7,"kurz":"Potsdamer Chaussee, Mexikoplatz, Spanische Allee, Königstraße, Wilhelmplatz, Kohlhasenbrück, Steinstücken"},{"bezirk":"Tempelhof-Schöneberg","slug":"tempelhof-schoeneberg","nr":1,"kurz":"Schöneberg-Nord: Wittenbergplatz, Nollendorfplatz, Yorckstraße, Heinrich-von-Kleist-Park, Bayerischer Platz, Viktoria-Luise-Platz"},{"bezirk":"Tempelhof-Schöneberg","slug":"tempelhof-schoeneberg","nr":2,"kurz":"Schöneberg-Süd: Rathaus Schöneberg, Schöneberger Insel, EUREF-Campus, Innsbrucker Platz"},{"bezirk":"Tempelhof-Schöneberg","slug":"tempelhof-schoeneberg","nr":3,"kurz":"Friedenau: S-Bahnhof Friedenau, Lindenhof, Alboinplatz, Marienhöhe, Insulaner"},{"bezirk":"Tempelhof-Schöneberg","slug":"tempelhof-schoeneberg","nr":4,"kurz":"Tempelhof: Manfred-v.-Richthofen-Straße, Tempelhofer Park, Teltowkanal, Bosepark, Rathaus Tempelhof"},{"bezirk":"Tempelhof-Schöneberg","slug":"tempelhof-schoeneberg","nr":5,"kurz":"Mariendorf: Hafen Mariendorf, Ullsteinhaus, Volkspark Mariendorf, Marienpark"},{"bezirk":"Tempelhof-Schöneberg","slug":"tempelhof-schoeneberg","nr":6,"kurz":"Marienfelde: S-Bahnhof Marienfelde, Trabrennbahn Mariendorf, Buckower Chaussee, Freizeitpark Marienfelde"},{"bezirk":"Tempelhof-Schöneberg","slug":"tempelhof-schoeneberg","nr":7,"kurz":"Lichtenrade: Volkspark Lichtenrade, Kirchhainer Damm, S-Bahnhof Lichtenrade"},{"bezirk":"Neukölln","slug":"neukoelln","nr":1,"kurz":"Nord-Neukölln (Ost), nördliche Sonnenallee"},{"bezirk":"Neukölln","slug":"neukoelln","nr":2,"kurz":"Nord-Neukölln (West), nördliche Karl-Marx-Straße, nördliche Hermannstraße"},{"bezirk":"Neukölln","slug":"neukoelln","nr":3,"kurz":"Rixdorf, nördliches Britz, Köllnische Heide"},{"bezirk":"Neukölln","slug":"neukoelln","nr":4,"kurz":"Nordöstliches Buckow, Gropiusstadt, nördliches Blumenviertel"},{"bezirk":"Neukölln","slug":"neukoelln","nr":5,"kurz":"Südwestliches Britz, südwestliches Buckow"},{"bezirk":"Neukölln","slug":"neukoelln","nr":6,"kurz":"Rudow, südliches Blumenviertel, südliche Gropiusstadt"},{"bezirk":"Treptow-Köpenick","slug":"treptow-koepenick","nr":1,"kurz":"Alt-Treptow, Plänterwald, Baumschulenweg"},{"bezirk":"Treptow-Köpenick","slug":"treptow-koepenick","nr":2,"kurz":"Oberschöneweide, Dammvorstadt, Altstadt Köpenick, Hirschgarten"},{"bezirk":"Treptow-Köpenick","slug":"treptow-koepenick","nr":3,"kurz":"Niederschöneweide, Oberspree, südliches Baumschulenweg, Johannisthal, Adlershof (West)"},{"bezirk":"Treptow-Köpenick","slug":"treptow-koepenick","nr":4,"kurz":"Altglienicke, Bohnsdorf"},{"bezirk":"Treptow-Köpenick","slug":"treptow-koepenick","nr":5,"kurz":"Spindlersfeld, Köllnische Vorstadt, Adlershof (Ost), Grünau, Karolinenhof, Schmöckwitz, Rauchfangswerder"},{"bezirk":"Treptow-Köpenick","slug":"treptow-koepenick","nr":6,"kurz":"Allendeviertel, Kietz, Kietzer Feld, Wendenschloß, Müggelheim"},{"bezirk":"Treptow-Köpenick","slug":"treptow-koepenick","nr":7,"kurz":"Köpenick Nord, Friedrichshagen, Rahnsdorf, Wilhelmshagen"},{"bezirk":"Marzahn-Hellersdorf","slug":"marzahn-hellersdorf","nr":1,"kurz":"Ahrensfelde-Süd, Marzahn-West, Marzahn-Ost"},{"bezirk":"Marzahn-Hellersdorf","slug":"marzahn-hellersdorf","nr":2,"kurz":"Gewerbegebiet, Marzahner Promenade, Allee der Kosmonauten"},{"bezirk":"Marzahn-Hellersdorf","slug":"marzahn-hellersdorf","nr":3,"kurz":"Kienberg, Alt-Hellersdorf, Hellersdorf Nord, Hönow-West"},{"bezirk":"Marzahn-Hellersdorf","slug":"marzahn-hellersdorf","nr":4,"kurz":"Marzahner Chaussee, Springpfuhl, Biesdorf-Nord, Biesdorf-Süd"},{"bezirk":"Marzahn-Hellersdorf","slug":"marzahn-hellersdorf","nr":5,"kurz":"Kaulsdorf-Süd, Mahlsdorf-Nord, Mahlsdorf-Süd"},{"bezirk":"Marzahn-Hellersdorf","slug":"marzahn-hellersdorf","nr":6,"kurz":"Kaulsdorf Nord, Hellersdorf Süd"},{"bezirk":"Lichtenberg","slug":"lichtenberg","nr":1,"kurz":"Wartenberg, Falkenberg, Neu-Hohenschönhausen (Ost)"},{"bezirk":"Lichtenberg","slug":"lichtenberg","nr":2,"kurz":"Malchow, Neu-Hohenschönhausen (West), Alt-Hohenschönhausen bis Sportforum, Konrad-Wolf-Straße"},{"bezirk":"Lichtenberg","slug":"lichtenberg","nr":3,"kurz":"Alt-Hohenschönhausen (Süd), Fennpfuhl, Rosenfelder Ring, Gensinger Straße"},{"bezirk":"Lichtenberg","slug":"lichtenberg","nr":4,"kurz":"Südlich Karl-Lade-Straße, Paul-Junius-Straße, Herzbergstraße, Stadtpark, Victoriastadt"},{"bezirk":"Lichtenberg","slug":"lichtenberg","nr":5,"kurz":"Friedrichsfelde, Tierpark"},{"bezirk":"Lichtenberg","slug":"lichtenberg","nr":6,"kurz":"Karlshorst, Trabrennbahn, Rummelsburg"},{"bezirk":"Reinickendorf","slug":"reinickendorf","nr":1,"kurz":"Reinickendorf-Ost, Reinickendorf-West (teilweise)"},{"bezirk":"Reinickendorf","slug":"reinickendorf","nr":2,"kurz":"Reinickendorf-West, Tegel-Süd (teilweise), Wittenau (teilweise), Mäckeritzwiesen"},{"bezirk":"Reinickendorf","slug":"reinickendorf","nr":3,"kurz":"Heiligensee, Konradshöhe, Tegelort, Tegel (teilweise), Tegel-Süd (teilweise), Saatwinkel"},{"bezirk":"Reinickendorf","slug":"reinickendorf","nr":4,"kurz":"Wittenau (teilweise), Waidmannslust, Borsigwalde, Tegel (teilweise)"},{"bezirk":"Reinickendorf","slug":"reinickendorf","nr":5,"kurz":"Lübars, Märkisches Viertel"},{"bezirk":"Reinickendorf","slug":"reinickendorf","nr":6,"kurz":"Frohnau, Hermsdorf, Freie Scholle"}];
+var box = document.getElementById('searchBox');
+var results = document.getElementById('searchResults');
+box.addEventListener('input', function() {
+  var q = box.value.trim().toLowerCase();
+  results.innerHTML = '';
+  if (q.length < 2) return;
+  var matches = WK_SEARCH_DATA.filter(function(w) {
+    return w.kurz.toLowerCase().indexOf(q) > -1 || w.bezirk.toLowerCase().indexOf(q) > -1;
+  }).slice(0, 12);
+  if (!matches.length) {
+    results.innerHTML = '<div style="color:#7a9ab8;font-size:0.85rem;padding:8px;">Keine Treffer. Bezirk direkt unten wählen.</div>';
+    return;
+  }
+  matches.forEach(function(m) {
+    var a = document.createElement('a');
+    a.className = 'result-item';
+    a.href = '/wahlkreise/' + m.slug + '.html#wk' + m.nr;
+    a.innerHTML = '<strong>' + m.bezirk + ' — Wahlkreis ' + m.nr + '</strong><span>' + m.kurz + '</span>';
+    results.appendChild(a);
+  });
+});
+</script>
+</body>
+</html>
