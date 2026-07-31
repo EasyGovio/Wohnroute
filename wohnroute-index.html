@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>WohnRoute | Ihr Zuhause. Ihr Weg.</title>
+    <meta name="description" content="Almanya'da konut ve yerleşim rehberi. Kiralık daire arama, sözleşme, depozito hakları ve göçmenler için özel ipuçları.">
+    <link rel="canonical" href="https://wohnroute.de/">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8426936740213369" crossorigin="anonymous"></script>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="WohnRoute | Ihr Zuhause. Ihr Weg.">
+    <meta property="og:description" content="Almanya'da konut ve yerleşim rehberi. Kiralık daire arama, sözleşme, depozito hakları ve göçmenler için özel ipuçları.">
+    <meta property="og:image" content="https://wohnroute.de/og-image.jpg">
+    <meta property="og:url" content="https://wohnroute.de">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WohnRoute">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WohnRoute | Ihr Zuhause. Ihr Weg.">
+    <meta name="twitter:description" content="Almanya'da konut ve yerleşim rehberi.">
+    <meta name="twitter:image" content="https://wohnroute.de/og-image.jpg">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        :root { --bg:#04162E; --card-bg:#04162E; --text:#ffffff; --accent:#E67E22; --muted:#cfdfe9; --border:rgba(230,126,34,0.2); --input-bg:rgba(255,255,255,0.1); --page-bg:#04162E; }
+        html[data-theme="light"] { --bg:#ffffff; --card-bg:#ffffff; --text:#2b1a0a; --accent:#c8660f; --muted:#6b5340; --border:rgba(200,102,15,0.25); --input-bg:rgba(0,0,0,0.04); --page-bg:#f7f0e8; }
+        body { background-color:var(--page-bg); font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',sans-serif; color:var(--text); line-height:1.5; padding:20px; transition:background-color 0.2s; }
+        .container { max-width:680px; margin:0 auto; background-color:var(--bg); border-radius:40px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,0.15); }
+        .header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:24px 24px 12px 24px; border-bottom:1px solid var(--border); }
+        .logo { font-size:1.8rem; font-weight:700; letter-spacing:-0.5px; }
+        .logo span { color:var(--accent); }
+        .badge { font-size:0.75rem; background:rgba(230,126,34,0.15); padding:6px 12px; border-radius:60px; color:var(--accent); font-weight:500; }
+        .header-controls { display:flex; gap:8px; align-items:center; }
+        .lang-buttons { display:flex; gap:6px; }
+        .lang-btn { background:var(--input-bg); border:1px solid var(--border); border-radius:50%; width:36px; height:36px; font-size:1.1rem; cursor:pointer; transition:0.2s; display:flex; align-items:center; justify-content:center; }
+        .lang-btn.active { background:var(--accent); border-color:var(--accent); }
+        .theme-toggle { background:var(--input-bg); border:1px solid var(--border); border-radius:50%; width:36px; height:36px; font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+        .hero { padding:32px 24px 24px 24px; text-align:left; }
+        .hero h1 { font-size:2.2rem; font-weight:800; line-height:1.2; margin-bottom:24px; letter-spacing:-0.3px; color:var(--text); }
+        .feature-list { list-style:none; margin:24px 0 0 0; }
+        .feature-list li { margin-bottom:16px; display:flex; align-items:flex-start; gap:12px; font-size:1rem; font-weight:500; }
+        .feature-list li::before { content:"✓"; color:var(--accent); font-weight:bold; font-size:1.2rem; display:inline-block; width:24px; }
+        .stats-section { margin:20px 24px; }
+        .stats-grid { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
+        .stat-card { background:rgba(230,126,34,0.1); border-radius:24px; padding:20px 16px; text-align:center; flex:1; min-width:130px; border:1px solid var(--border); }
+        .stat-number { font-size:2rem; font-weight:800; color:var(--accent); line-height:1.2; }
+        .stat-label { font-size:0.85rem; color:var(--muted); margin-top:6px; }
+        .info-section { margin:20px 24px; }
+        .info-cards { display:flex; flex-direction:column; gap:16px; }
+        .info-card { background:rgba(230,126,34,0.06); border-radius:20px; padding:18px 20px; display:flex; gap:16px; align-items:flex-start; border-left:4px solid var(--accent); }
+        .info-emoji { font-size:2rem; }
+        .info-text { flex:1; font-size:0.95rem; line-height:1.5; color:var(--text); }
+        .info-text strong { color:var(--accent); }
+        .beta-section { background:rgba(230,126,34,0.08); margin:20px 24px 32px 24px; padding:28px 24px; border-radius:32px; text-align:center; }
+        .beta-section h3 { font-size:1.4rem; margin-bottom:8px; font-weight:700; color:var(--text); }
+        .beta-section p { font-size:0.9rem; color:var(--muted); margin-bottom:20px; }
+        .form-group { display:flex; flex-direction:column; gap:12px; max-width:400px; margin:0 auto; }
+        .form-group input { background:var(--input-bg); border:1px solid var(--border); border-radius:60px; padding:14px 20px; font-size:1rem; color:var(--text); outline:none; transition:all 0.2s ease; }
+        .form-group input:focus { border-color:var(--accent); }
+        .form-group input::placeholder { color:var(--muted); }
+        .btn-primary { background:var(--accent); border:none; border-radius:60px; padding:14px 20px; font-size:1rem; font-weight:700; color:#04162E; cursor:pointer; transition:0.2s; width:100%; text-align:center; }
+        .btn-primary:hover { opacity:0.9; transform:scale(0.98); }
+        .footer { padding:24px 24px 32px 24px; text-align:center; border-top:1px solid var(--border); font-size:0.7rem; color:var(--muted); }
+        .footer p { margin-bottom:6px; }
+        .footer-note { font-size:0.7rem; color:var(--muted); opacity:0.7; }
+        @media (min-width:560px) { .hero h1 { font-size:2.6rem; } .form-group { flex-direction:row; gap:12px; max-width:480px; } .form-group input { flex:1; } .btn-primary { width:auto; padding:14px 32px; } .stats-grid { flex-wrap:nowrap; } }
+        @media (min-width:768px) { body { padding:40px 20px; } .container { max-width:760px; } .info-cards { flex-direction:row; flex-wrap:wrap; } .info-card { flex:1 1 45%; } }
+        @media (min-width:1024px) { body { padding:60px 20px; background-image:radial-gradient(circle at 20% 20%, rgba(230,126,34,0.06), transparent 40%), radial-gradient(circle at 80% 80%, rgba(230,126,34,0.04), transparent 40%); } .container { max-width:880px; } .hero h1 { font-size:3rem; } }
+        @media (max-width:400px) { .header { flex-direction:column; align-items:flex-start; } .logo { font-size:1.6rem; } .hero h1 { font-size:1.9rem; } .stat-card { min-width:100px; } }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6ML8EDW0H"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-E6ML8EDW0H");</script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PACDI">
+    <script>
+(function(){
+  if (sessionStorage.getItem('autoLang')) return;
+  var bl = (navigator.language || navigator.userLanguage || 'en').substring(0,2).toLowerCase();
+  var supported = ['tr','de','en'];
+  var lang = supported.indexOf(bl) > -1 ? bl : 'en';
+  sessionStorage.setItem('autoLang', lang);
+})();
+</script>
+    <script>
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('beta') === 'pacdi2026') {
+    try { sessionStorage.setItem('betaUnlock', '1'); } catch(e) {}
+  }
+  window.isBetaUnlocked = function() {
+    try { return sessionStorage.getItem('betaUnlock') === '1'; } catch(e) { return false; }
+  };
+})();
+</script>
+    <style>
+    .pacdi-share-bar{margin-top:24px;padding:16px;background:rgba(246,180,95,0.05);border:1px solid rgba(246,180,95,0.15);border-radius:10px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,sans-serif;box-sizing:border-box;}
+    .pacdi-share-label{font-size:0.8rem;color:#7a9ab8;margin-bottom:10px;font-weight:600;}
+    .pacdi-share-btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+    .pacdi-share-btn{display:inline-flex;align-items:center;gap:4px;font-size:0.78rem;padding:7px 14px;border-radius:20px;border:1px solid rgba(246,180,95,0.3);background:transparent;color:#F6B45F;text-decoration:none;cursor:pointer;font-family:inherit;}
+    .pacdi-share-btn:hover{background:rgba(246,180,95,0.1);}
+    </style>
+    <style>#userPanel .btn-sm { background: transparent !important; color: var(--gold) !important; border: 1px solid var(--gold) !important; } #userPanel .btn-sm:hover { background: rgba(246,180,95,0.1) !important; }</style>
+</head>
+<body>
+<!--
+╬═══════════════════════════════════════════════════════════════╮
+║         🛡️  PACDI FRAMEWORK — PROTECTED WORK                  ║
+║                                                               ║
+║  © 2026 PACDI Global Yazılım Ltd. Şti.                       ║
+║  FSEK Registration No : 2026/18897                            ║
+║  Trade Registry      : 23836 · Yunusemre / Manisa, TR       ║
+║                                                               ║
+║  This work and its modular software architecture are          ║
+║  protected under PACDI Software Library FSEK registration.   ║
+║  Unauthorized copying is subject to legal action.            ║
+║                                                               ║
+║  pacdi.eu · pacdi.de · info@pacdi.eu                         ║
+╠═══════════════════════════════════════════════════════════════╣
+-->
+
+<div class="container">
+    <div class="header">
+        <div class="logo">Wohn<span>Route</span></div>
+        <div class="badge">PACDI | Konut Rehberi</div>
+        <div class="header-controls">
+            <div class="lang-buttons">
+                <button class="lang-btn" data-lang="tr" title="Türkçe">🇹🇷</button>
+                <button class="lang-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+                <button class="lang-btn" data-lang="en" title="English">🇬🇧</button>
+            </div>
+            <button class="theme-toggle" id="themeToggle" title="Görünüm">🌙</button>
+        </div>
+    </div>
+    <div id="dynamicContent"></div>
+    <div class="footer">
+        <p>© 2026 PACDI — wohnroute.de</p>
+        <p class="footer-note">Datenschutzfreundlich · Keine Speicherung</p>
+    </div>
+</div>
+<script>
+    var translations = {
+        tr: {
+            heroTitle: "Ihr Zuhause. Ihr Weg.",
+            features: ["Kiralık daire arama rehberliği","Mietvertrag (kira sözleşmesi) rehberi","Kapora ve depozito hakları","Göçmenler için özel ipuçları"],
+            statsTitle: "Rakamlarla Berlin Konut Piyasası",
+            stats: [{number:"400-500",label:"İlk 1 saatteki başvuru (popüler semtlerde)"},{number:"%8-12",label:"Ortalama kira artışı (2024)"},{number:"3 Kat",label:"Maksimum depozito (Kaltmiete)"}],
+            didYouKnowTitle: "Bunu Biliyor muydun?",
+            cards: [{emoji:"💰",text:"Depozitoyu (Kaution) peşin ödemek ZORUNDA DEĞİLSİNİZ. Kanun size 3 taksit hakkı tanır."},{emoji:"🏦",text:"Ev sahibi depozitoyu kendi hesabında TUTAMAZ. Sizin adınıza faiz getiren ayrı bir <strong>Kaution-Konto</strong>'da saklamak zorundadır."},{emoji:"📄",text:"<strong>SCHUFA</strong> belgesi olmadan iyi bir daireye başvurmak neredeyse imkansız. Almanya'ya gelir gelmez SCHUFA kaydı oluşturun. <strong>WBS</strong> belgesiyle sosyal konuta başvurabilirsiniz."}],
+            betaTitle:"Beta listesine katılın",betaDesc:"WohnRoute'u ilk deneyenlerden olun. Konut arayışınızda yanınızdayız.",
+            namePlaceholder:"Adınız",emailPlaceholder:"E-posta adresiniz",buttonText:"Beta Listesine Katıl"
+        },
+        de: {
+            heroTitle: "Ihr Zuhause. Ihr Weg.",
+            features: ["Wohnungssuche-Beratung","Mietvertrag-Ratgeber","Kaution & Depot-Rechte","Tipps für Migranten"],
+            statsTitle: "Berliner Wohnungsmarkt in Zahlen",
+            stats: [{number:"400-500",label:"Bewerbungen in der 1. Stunde (in beliebten Bezirken)"},{number:"%8-12",label:"Durchschnittliche Mietsteigerung (2024)"},{number:"3 Kaltmieten",label:"Maximale Kaution"}],
+            didYouKnowTitle: "Wussten Sie schon?",
+            cards: [{emoji:"💰",text:"Sie sind NICHT verpflichtet, die Kaution sofort komplett zu zahlen. Das Gesetz gewährt Ihnen <strong>drei Raten</strong>."},{emoji:"🏦",text:"Der Vermieter darf die Kaution NICHT auf seinem privaten Konto verwahren. Er muss sie auf einem <strong>verzinsten Kautionskonto</strong> anlegen, das auf Ihren Namen läuft."},{emoji:"📄",text:"Ohne <strong>SCHUFA</strong>-Auskunft ist die Bewerbung auf eine gute Wohnung fast unmöglich. Kümmern Sie sich direkt nach Ihrer Ankunft in Deutschland um eine SCHUFA-Selbstauskunft. Mit einem <strong>WBS</strong> können Sie eine Sozialwohnung beantragen."}],
+            betaTitle:"Beta-Liste beitreten",betaDesc:"Seien Sie einer der Ersten, die WohnRoute nutzen. Wir begleiten Sie bei Ihrer Wohnungssuche.",
+            namePlaceholder:"Ihr Name",emailPlaceholder:"E-Mail-Adresse",buttonText:"Beta-Liste beitreten"
+        },
+        en: {
+            heroTitle: "Your home. Your way.",
+            features: ["Apartment search guidance","Rental contract guide","Deposit & security rights","Special tips for newcomers"],
+            statsTitle: "Berlin Housing Market in Numbers",
+            stats: [{number:"400-500",label:"Applications within 1st hour (in popular districts)"},{number:"8-12%",label:"Average rent increase (2024)"},{number:"3x cold rent",label:"Maximum deposit"}],
+            didYouKnowTitle: "Did you know?",
+            cards: [{emoji:"💰",text:"You are NOT required to pay the entire deposit upfront. The law allows you to pay in <strong>three installments</strong>."},{emoji:"🏦",text:"The landlord CANNOT keep the deposit in their personal account. They must place it in a separate <strong>interest-bearing deposit account</strong> in your name."},{emoji:"📄",text:"Applying for a good apartment without a <strong>SCHUFA</strong> report is nearly impossible. Request your SCHUFA self-report as soon as you arrive in Germany. With a <strong>WBS</strong> certificate you can apply for social housing."}],
+            betaTitle:"Join the Beta List",betaDesc:"Be among the first to experience WohnRoute. We'll help you navigate your housing search.",
+            namePlaceholder:"Your name",emailPlaceholder:"Email address",buttonText:"Join Beta List"
+        }
+    };
+    var currentLang = "tr";
+    function detectLanguage() { var l = navigator.language || navigator.userLanguage; if(l.indexOf("de")===0) return "de"; if(l.indexOf("en")===0) return "en"; return "tr"; }
+    function renderContent(lang) {
+        var t = translations[lang]; if(!t) return;
+        var statsHtml = '<div class="stats-section"><h2 style="font-size:1.3rem;margin-bottom:16px;">📊 '+t.statsTitle+'</h2><div class="stats-grid">';
+        for(var i=0;i<t.stats.length;i++) statsHtml+='<div class="stat-card"><div class="stat-number">'+t.stats[i].number+'</div><div class="stat-label">'+t.stats[i].label+'</div></div>';
+        statsHtml+='</div></div>';
+        var infoHtml='<div class="info-section"><h2 style="font-size:1.3rem;margin-bottom:16px;">💡 '+t.didYouKnowTitle+'</h2><div class="info-cards">';
+        for(var j=0;j<t.cards.length;j++) infoHtml+='<div class="info-card"><div class="info-emoji">'+t.cards[j].emoji+'</div><div class="info-text">'+t.cards[j].text+'</div></div>';
+        infoHtml+='</div></div>';
+        var wahlkreiseHtml='<div style="margin:20px 24px;background:rgba(230,126,34,0.08);border:1px solid var(--border);border-radius:24px;padding:22px 20px;text-align:center;"><div style="font-size:1.8rem;margin-bottom:8px;">🗳️</div><h3 style="font-size:1.15rem;margin-bottom:6px;color:var(--text);">Wahlkreis Ihrer neuen Adresse</h3><p style="font-size:0.85rem;color:var(--muted);margin-bottom:14px;">Sie ziehen um? Finden Sie Ihren Wahlkreis für die Berliner Wahl 2026 und Schulen in der Nachbarschaft — für alle 12 Bezirke.</p><a href="/wahlkreise/" style="display:inline-block;background:var(--accent);color:#04162E;padding:10px 22px;border-radius:60px;text-decoration:none;font-weight:700;font-size:0.85rem;">Jetzt entdecken →</a></div>';
+        var featureItems=''; for(var k=0;k<t.features.length;k++) featureItems+='<li>'+t.features[k]+'</li>';
+        var heroHtml='<div class="hero"><h1>'+t.heroTitle+'</h1><ul class="feature-list">'+featureItems+'</ul></div>';
+        var formHtml='<div class="beta-section"><h3>📧 '+t.betaTitle+'</h3><p>'+t.betaDesc+'</p><form id="betaForm" onsubmit="return submitBeta(event)"><div class="form-group"><input type="text" id="name" name="name" placeholder="'+t.namePlaceholder+'" required><input type="email" id="email" name="email" placeholder="'+t.emailPlaceholder+'" required><button type="submit" class="btn-primary">'+t.buttonText+'</button></div></form></div>';
+        document.getElementById("dynamicContent").innerHTML = heroHtml+statsHtml+wahlkreiseHtml+infoHtml+formHtml;
+        var btns=document.querySelectorAll('.lang-btn'); for(var i=0;i<btns.length;i++) { if(btns[i].getAttribute('data-lang')===lang) btns[i].classList.add('active'); else btns[i].classList.remove('active'); }
+    }
+    function setLanguage(lang) { currentLang=lang; renderContent(lang); }
+    function submitBeta(event) {
+        event.preventDefault();
+        var n=document.getElementById('name'); var e=document.getElementById('email');
+        if(n&&e&&n.value.trim()!==''&&e.value.trim()!=='') { alert(currentLang==="tr"?"Teşekkürler! Size ulaşacağız.":(currentLang==="de"?"Vielen Dank! Wir melden uns.":"Thank you! We'll be in touch.")); n.value=''; e.value=''; }
+        else { alert(currentLang==="tr"?"Lütfen adınızı ve e-posta adresinizi giriniz.":(currentLang==="de"?"Bitte geben Sie Ihren Namen und Ihre E-Mail-Adresse ein.":"Please enter your name and email address.")); }
+        return false;
+    }
+    var initialLang=detectLanguage(); setLanguage(initialLang);
+    var langBtns=document.querySelectorAll('.lang-btn'); for(var i=0;i<langBtns.length;i++) { langBtns[i].addEventListener('click',function(e){ setLanguage(this.getAttribute('data-lang')); }); }
+
+    // Gece/Gündüz modu
+    (function(){
+        var toggle = document.getElementById('themeToggle');
+        var saved = null;
+        try { saved = localStorage.getItem('wohnroute_theme'); } catch(e) {}
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = saved || (prefersLight ? 'light' : 'dark');
+        function applyTheme(t){
+            document.documentElement.setAttribute('data-theme', t);
+            toggle.textContent = t === 'light' ? '☀️' : '🌙';
+            try { localStorage.setItem('wohnroute_theme', t); } catch(e) {}
+        }
+        applyTheme(theme);
+        toggle.addEventListener('click', function(){
+            theme = theme === 'light' ? 'dark' : 'light';
+            applyTheme(theme);
+        });
+    })();
+</script>
+<div class="pacdi-share-bar" id="pacdiShareBar" style="clear:both;width:100%;flex-basis:100%;"></div>
+<script>
+(function(){
+  var pageTitle = (document.title.split('|')[0] || document.title).trim();
+  var pageUrl = window.location.href;
+  var shareText = 'Bu ' + pageTitle + ' aracını faydalı buldum, senin de işine yarayabilir:';
+
+  var bar = document.getElementById('pacdiShareBar');
+  if (!bar) return;
+  bar.innerHTML =
+    '<div class="pacdi-share-label">🔗 Bu aracı paylaş</div>' +
+    '<div class="pacdi-share-btns">' +
+      '<button class="pacdi-share-btn" id="pacdiShareNative" style="display:none;">📤 Paylaş</button>' +
+      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?text=' + encodeURIComponent(shareText + ' ' + pageUrl) + '">💬 WhatsApp</a>' +
+      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(pageUrl) + '">𝕏</a>' +
+      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl) + '">Facebook</a>' +
+      '<a class="pacdi-share-btn" target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(pageUrl) + '">LinkedIn</a>' +
+      '<button class="pacdi-share-btn" id="pacdiShareCopy">🔗 Kopyala</button>' +
+    '</div>';
+
+  if (navigator.share) {
+    var nativeBtn = document.getElementById('pacdiShareNative');
+    nativeBtn.style.display = 'inline-flex';
+    nativeBtn.onclick = function(){
+      navigator.share({ title: pageTitle, text: shareText, url: pageUrl }).catch(function(){});
+    };
+  }
+
+  var copyBtn = document.getElementById('pacdiShareCopy');
+  copyBtn.onclick = function(){
+    navigator.clipboard.writeText(pageUrl).then(function(){
+      var old = copyBtn.textContent;
+      copyBtn.textContent = '✓ Kopyalandı!';
+      setTimeout(function(){ copyBtn.textContent = old; }, 2000);
+    }).catch(function(){});
+  };
+})();
+</script>
+
+<div id="pacdi-fsek" style="clear:both;width:100%;flex-basis:100%;text-align:center;padding:28px 16px 20px;border-top:1px solid rgba(212,175,55,0.15);margin-top:32px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+  <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,0.06);border:1px solid rgba(212,175,55,0.25);border-radius:24px;padding:8px 20px;margin-bottom:12px;">
+    <span style="font-size:1rem;">🛡️</span>
+    <span style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;color:#D4AF37;text-transform:uppercase;">FSEK Registered · PACDI Framework</span>
+  </div>
+  <div style="font-size:0.78rem;color:#8A8F9A;margin-bottom:4px;">Operated by AskMeAI Teknoloji Ltd. Şti. (TR: 23837)</div>
+  <div style="font-size:0.72rem;color:#6B7280;margin-bottom:10px;">Intellectual property owned by © 2026 PACDI Global Yazılım Ltd. Şti. &mdash; FSEK No: <a href="https://pacdi.eu/legal.html" style="color:#D4AF37;text-decoration:none;">2026/18897</a></div>
+  <div style="font-size:0.82rem;font-style:italic;color:#6B7280;">&ldquo;Technology in the service of humanity.&rdquo;</div>
+</div>
+<script>
+(function() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(function(){});
+  }
+
+  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  var isInStandalone = ('standalone' in navigator && navigator.standalone);
+  var shown = sessionStorage.getItem('pwa-banner-shown');
+  if (shown || isInStandalone) return;
+
+  // iOS Safari — manuel yönlendirme
+  if (isIOS) {
+    setTimeout(function() {
+      var bar = document.createElement('div');
+      bar.id = 'pwa-banner';
+      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#04162E;border-top:2px solid #F6B45F;padding:14px 16px;z-index:9999;font-family:system-ui;';
+      bar.innerHTML =
+        '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">' +
+          '<div>' +
+            '<div style="color:#F6B45F;font-size:0.82rem;font-weight:700;margin-bottom:4px;">📲 Ana ekrana ekle</div>' +
+            '<div style="color:#b0b5bf;font-size:0.75rem;line-height:1.5;">Safari&#39;de <strong style="color:#eaf2fb;">&#11015; Paylaş</strong> butonuna bas, ardından <strong style="color:#eaf2fb;">Ana Ekrana Ekle</strong> seçeneğini seç.</div>' +
+            '<div style="color:#4a6a88;font-size:0.68rem;margin-top:4px;">&#9432; iOS&#39;ta otomatik kurulum desteklenmiyor — bu adım gerekli.</div>' +
+          '</div>' +
+          '<button onclick="document.getElementById(&#39;pwa-banner&#39;).remove();sessionStorage.setItem(&#39;pwa-banner-shown&#39;,&#39;1&#39;)" style="background:transparent;border:none;color:#7a9ab8;font-size:1.2rem;cursor:pointer;padding:0 4px;flex-shrink:0;">✕</button>' +
+        '</div>';
+      document.body.appendChild(bar);
+      sessionStorage.setItem('pwa-banner-shown', '1');
+    }, 3000);
+    return;
+  }
+
+  // Android / Desktop Chrome — otomatik install prompt
+  var deferredPrompt = null;
+  window.addEventListener('beforeinstallprompt', function(e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    setTimeout(function() {
+      if (!deferredPrompt) return;
+      var bar = document.createElement('div');
+      bar.id = 'pwa-banner';
+      bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#04162E;border-top:2px solid #F6B45F;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;z-index:9999;font-family:system-ui;';
+      bar.innerHTML =
+        '<span style="color:#eaf2fb;font-size:0.85rem;">📲 Ana ekrana ekle &mdash; daha hızlı aç!</span>' +
+        '<div style="display:flex;gap:8px;">' +
+          '<button onclick="installPWA()" style="background:#F6B45F;border:none;color:#04162E;padding:6px 16px;border-radius:20px;font-weight:700;cursor:pointer;font-size:0.82rem;">Ekle</button>' +
+          '<button onclick="document.getElementById(&#39;pwa-banner&#39;).remove();sessionStorage.setItem(&#39;pwa-banner-shown&#39;,&#39;1&#39;)" style="background:transparent;border:1px solid rgba(246,180,95,0.3);color:#7a9ab8;padding:6px 12px;border-radius:20px;cursor:pointer;font-size:0.82rem;">Sonra</button>' +
+        '</div>';
+      document.body.appendChild(bar);
+    }, 3000);
+  });
+
+  window.installPWA = function() {
+    if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt.userChoice.then(function(){ deferredPrompt=null; }); }
+    var b = document.getElementById('pwa-banner'); if (b) b.remove();
+    sessionStorage.setItem('pwa-banner-shown', '1');
+  };
+})();
+</script>
+
+</body>
+</html>
