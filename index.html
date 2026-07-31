@@ -102,52 +102,6 @@
     .pacdi-share-btn:hover{background:rgba(246,180,95,0.1);}
     </style>
     <style>#userPanel .btn-sm { background: transparent !important; color: var(--gold) !important; border: 1px solid var(--gold) !important; } #userPanel .btn-sm:hover { background: rgba(246,180,95,0.1) !important; }</style>
-    <style>
-    [data-theme="dark"]:not([data-pacdi-native-theme]) { filter: invert(1) hue-rotate(180deg); background: #fff; }
-    [data-theme="dark"]:not([data-pacdi-native-theme]) img,
-    [data-theme="dark"]:not([data-pacdi-native-theme]) svg,
-    [data-theme="dark"]:not([data-pacdi-native-theme]) video,
-    [data-theme="dark"]:not([data-pacdi-native-theme]) picture,
-    [data-theme="dark"]:not([data-pacdi-native-theme]) iframe { filter: invert(1) hue-rotate(180deg); }
-    .pacdi-theme-toggle { position: fixed; top: 10px; right: 10px; z-index: 99999; width: 2.1rem; height: 2.1rem;
-      border: none; border-radius: 50%; background: rgba(0,0,0,0.08); font-size: 1.05rem; cursor: pointer;
-      display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
-    .pacdi-theme-toggle:hover { background: rgba(0,0,0,0.16); }
-    </style>
-    <script>
-(function(){
-  var KEY = 'pacdi-theme';
-  function apply(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    var btn = document.getElementById('pacdiThemeToggle');
-    if (btn) btn.textContent = theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
-  }
-  var saved = null;
-  try { saved = localStorage.getItem(KEY); } catch(e) {}
-  var preferred = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
-  apply(saved || preferred);
-  function addBtn() {
-    if (document.getElementById('pacdiThemeToggle')) return;
-    var btn = document.createElement('button');
-    btn.id = 'pacdiThemeToggle';
-    btn.className = 'pacdi-theme-toggle';
-    btn.setAttribute('aria-label', 'Koyu/Acik mod');
-    btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
-    btn.onclick = function() {
-      var cur = document.documentElement.getAttribute('data-theme');
-      var next = cur === 'dark' ? 'light' : 'dark';
-      try { localStorage.setItem(KEY, next); } catch(e) {}
-      apply(next);
-    };
-    document.body.appendChild(btn);
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', addBtn);
-  } else {
-    addBtn();
-  }
-})();
-</script>
 </head>
 <body>
 <!--
@@ -228,10 +182,11 @@
         var infoHtml='<div class="info-section"><h2 style="font-size:1.3rem;margin-bottom:16px;">💡 '+t.didYouKnowTitle+'</h2><div class="info-cards">';
         for(var j=0;j<t.cards.length;j++) infoHtml+='<div class="info-card"><div class="info-emoji">'+t.cards[j].emoji+'</div><div class="info-text">'+t.cards[j].text+'</div></div>';
         infoHtml+='</div></div>';
+        var wahlkreiseHtml='<div style="margin:20px 24px;background:rgba(230,126,34,0.08);border:1px solid var(--border);border-radius:24px;padding:22px 20px;text-align:center;"><div style="font-size:1.8rem;margin-bottom:8px;">🗳️</div><h3 style="font-size:1.15rem;margin-bottom:6px;color:var(--text);">Wahlkreis Ihrer neuen Adresse</h3><p style="font-size:0.85rem;color:var(--muted);margin-bottom:14px;">Sie ziehen um? Finden Sie Ihren Wahlkreis für die Berliner Wahl 2026 und Schulen in der Nachbarschaft — für alle 12 Bezirke.</p><a href="/wahlkreise/" style="display:inline-block;background:var(--accent);color:#04162E;padding:10px 22px;border-radius:60px;text-decoration:none;font-weight:700;font-size:0.85rem;">Jetzt entdecken →</a></div>';
         var featureItems=''; for(var k=0;k<t.features.length;k++) featureItems+='<li>'+t.features[k]+'</li>';
         var heroHtml='<div class="hero"><h1>'+t.heroTitle+'</h1><ul class="feature-list">'+featureItems+'</ul></div>';
         var formHtml='<div class="beta-section"><h3>📧 '+t.betaTitle+'</h3><p>'+t.betaDesc+'</p><form id="betaForm" onsubmit="return submitBeta(event)"><div class="form-group"><input type="text" id="name" name="name" placeholder="'+t.namePlaceholder+'" required><input type="email" id="email" name="email" placeholder="'+t.emailPlaceholder+'" required><button type="submit" class="btn-primary">'+t.buttonText+'</button></div></form></div>';
-        document.getElementById("dynamicContent").innerHTML = heroHtml+statsHtml+infoHtml+formHtml;
+        document.getElementById("dynamicContent").innerHTML = heroHtml+statsHtml+wahlkreiseHtml+infoHtml+formHtml;
         var btns=document.querySelectorAll('.lang-btn'); for(var i=0;i<btns.length;i++) { if(btns[i].getAttribute('data-lang')===lang) btns[i].classList.add('active'); else btns[i].classList.remove('active'); }
     }
     function setLanguage(lang) { currentLang=lang; renderContent(lang); }
