@@ -2,230 +2,314 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wohnroute.de/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/finder.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wohnroute.de/wahlkreise/mitte.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/friedrichshain-kreuzberg.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/pankow.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/charlottenburg-wilmersdorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/spandau.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/steglitz-zehlendorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/tempelhof-schoeneberg.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/neukoelln.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/treptow-koepenick.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/marzahn-hellersdorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/lichtenberg.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/reinickendorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/29-euro-ticket-bvg.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/a100-ausbau-kontroverse.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/autofreie-innenstadt-berlin.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/buergeramt-termin-berlin.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/enteignung-deutsche-wohnen.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/kaution-zurueckfordern.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/kitaplatz-mangel-berlin.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/kritische-infrastruktur-berlin.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/kuendigungsfristen-mietvertrag.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/maklerprovision-berlin.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/mietendeckel-berlin-urteil.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/mietspiegel-berlin-verstehen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/nebenkostenabrechnung-pruefen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/neubau-berlin-projekte.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/radwege-berlin-ausbau.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/schufa-auskunft-wohnungssuche.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/ummeldung-berlin-fristen-unterlagen-ablauf.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/umzug-nach-berlin-checkliste.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/verwaltungsreform-berlin.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wahlrecht-nach-umzug.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-charlottenburg-wilmersdorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-friedrichshain-kreuzberg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-lichtenberg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-marzahn-hellersdorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-mitte.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-neukoelln.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-pankow.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-reinickendorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-spandau.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-steglitz-zehlendorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-tempelhof-schoeneberg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnen-in-treptow-koepenick.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohngeld-beantragen-berlin.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wohnroute.de/wahlkreise/artikel/wohnungsbesichtigung-checkliste.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/wahlkreise/artikel/wohnungsnot-berlin-ursachen.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wohnroute.de/legal.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
